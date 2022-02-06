@@ -5,7 +5,6 @@ import NFTCollection from './Collection'
 import SelectedShape from './SelectedShape'
 
 export default function MainContent(props){
-	console.log(props.onShapeClicked);
 	//data handle
 	return(
 		<>
@@ -21,12 +20,14 @@ export default function MainContent(props){
 			
 			<SelectedShape mainShape={props.mainShape[0]}/>
 			 
-			<NFTCollection nftList={props.nftList} onShapeClicked={props.onShapeClicked}/>
+			<NFTCollection mainShape={props.mainShape[0]} nftList={props.nftList} onShapeClicked={props.onShapeClicked}/>
 			 
 			<div className="card title-card center-text">
-				<h2 className="lexend">Own the shapes</h2>
-				<div className="raleway">Now you can own these universal mathematical concepts. Have physicists, mathematcians, teachers, artists pay royalties to you every time they use these shapes</div>
+				<h2 className="lexend">2D, 4D, xD</h2>
+				<div className="raleway">all lower and higher dimensional shapes coming soon. Own the fundamental shapes of the universe </div>
 			</div>
+			 
+			<div className="end-space"> aaa</div>
 		</div>
 		</>
 	)

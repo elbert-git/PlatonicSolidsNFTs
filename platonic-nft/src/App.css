@@ -63,6 +63,7 @@ html, body {
 	-3px 10px 20px rgba(0,0,0,0.1);
 	margin: 1em;
 	font-size: 0.8em;
+	 
 }
 html{
 	background-color: white;
@@ -112,12 +113,39 @@ html{
 	width: 20em;
 	border-radius: 1em;
 }
+.selected-shape > div > div> button{
+	 
+	border-radius:3em;
+	padding:0.8em;
+	font-size:0.8em;
+	 
+	background-color:hsl(174, 83%, 73%) ;
+	 
+	border-width: 0;
+	 
+	transition: 0.3s;
+}
+.selected-shape > div > div> button:hover{
+	background-color:hsl(174, 83%, 50%) ;
+	outline: solid var(--dark-blue) 3px;
+}
+.selected-shape > div > div> button:active{
+	background-color:hsl(174, 83%, 20%) ;
+}
+.selected-shape-bottom-div{
+	display:flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
  
 .nft-collection{
 	position: relative;
 	top: 20vw;
 	 
 	overflow-x: scroll;
+	cursor:grab;
+	 
+	
 	display:flex;
 	flex-wrap: nowrap;
 	 
@@ -152,11 +180,35 @@ html{
 	3px -3px 10px rgba(0,0,0,0.1),
 	-3px 3px 10px rgba(0,0,0,0.1);
 	margin: 1em;
+	 
+	transition: 0.3s;
+	transform: scale(0.98,0.98);
+	 
+	cursor: default;
 }
- 
+.nft-card:hover{
+	transform: scale(1,1);
+}
+.nft-card:active{
+	transform: scale(0.8,0.8);
+}
+.nft-card-selected{
+	outline: 10px solid var(--orange);
+}
+
 .nft-card > img{
 	width:100%;
 	border-radius:1em;
+}
+ 
+
+.end-space{
+	position: relative;
+	top: 20vw;
+	 
+	min-height:5em;
+	min-width:100%;
+	opacity: 0;
 }
 
 
@@ -173,5 +225,10 @@ html{
 @media only screen and (max-width: 500px) {
 	html {
 		font-size: 0.8em
+	}
+}
+@media only screen and (min-width: 500px) {
+	html {
+		font-size: 1.5em
 	}
 }
