@@ -193,7 +193,6 @@ html{
 	transform: scale(0.8,0.8);
 }
 .nft-card-selected{
-	outline: 10px solid var(--orange);
 }
 
 .nft-card > img{
@@ -229,6 +228,6 @@ html{
 }
 @media only screen and (min-width: 500px) {
 	html {
-		font-size: 1.5em
+		font-size: 1.3em
 	}
 }
