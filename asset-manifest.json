@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PlatonicSolidsNFTs/static/css/main.f177ece9.css",
+    "main.js": "/PlatonicSolidsNFTs/static/js/main.6b48cd25.js",
+    "static/media/HeaderPage.png": "/PlatonicSolidsNFTs/static/media/HeaderPage.1c5c6052e241672ec67a.png",
+    "static/media/Cube.png": "/PlatonicSolidsNFTs/static/media/Cube.e6f2515bd179d0cbbcc1.png",
+    "index.html": "/PlatonicSolidsNFTs/index.html",
+    "main.f177ece9.css.map": "/PlatonicSolidsNFTs/static/css/main.f177ece9.css.map",
+    "main.6b48cd25.js.map": "/PlatonicSolidsNFTs/static/js/main.6b48cd25.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f177ece9.css",
+    "static/js/main.6b48cd25.js"
+  ]
+}
